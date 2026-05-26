@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: terraform
+        working-directory: mlops-course-2026/terraform
 
     steps:
       - name: Checkout repository
