@@ -22,7 +22,7 @@ class Trainer:
         preprocessor = ColumnTransformer(transformers=[
             ('minmax', MinMaxScaler(), ['AnnualPremium']),
             ('standard', StandardScaler(), ['Age', 'RegionID']),
-            ('onehot', OneHotEncoder(sparse_output=False, drop='first'), ['Gender', 'PastAccident'])
+            ('onehot', OneHotEncoder(sparse_output=False, drop='first', handle_unknown='ignore'), ['Gender', 'PastAccident'])
         ])
 
         params = {k: v for k, v in self.config['model']['params'].items() if v is not None}
