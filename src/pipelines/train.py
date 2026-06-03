@@ -1,3 +1,4 @@
+import os
 import yaml
 import joblib
 from imblearn.pipeline import Pipeline
@@ -49,4 +50,5 @@ class Trainer:
 
     def save_model(self):
         store_path = self.config['model']['store_path']
+        os.makedirs(store_path, exist_ok=True)
         joblib.dump(self.pipeline, f'{store_path}/model.pkl')
