@@ -1,0 +1,9 @@
+dvc-s3
+imbalanced-learn
+mlflow
+notebook
+pandas
+scikit-learn
+joblib
+fastapi
+pytest
