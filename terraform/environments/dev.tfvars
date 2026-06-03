@@ -22,7 +22,7 @@ ecr_repositories = [
 apprunner_services = [
     {
         key  = "mlops-course-app"
-        source_confiugarition = {
+        source_configuration = {
             image_repository = {
                 image_identifier = "863745572691.dkr.ecr.eu-west-1.amazonaws.com/dev-mlops-course-ehb-repository:latest"
                 image_repository_type = "ECR"
